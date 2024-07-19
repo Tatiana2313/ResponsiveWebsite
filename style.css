@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 50px 10px 50px;
+}
+
+.container .head {
+    display: flex;
+    align-items: center;
+}
+
+.head img {
+    width: 200px;
+    height: 140px;
+}
+
+.head ul {
+    list-style-type: none;
+}
+
+.head h1 {
+    margin-top: 0;
+    margin-left: 25px;
+    font-size: 45px;
+}
+
+.head h5 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.head .last-image {
+    margin-left: 480px;
+}
+
+.navigation + hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navigation {
+    position: relative;
+    width: 503px;
+    margin-top: 0;
+}
+
+.navigation li {
+    float: left;
+    border: 1px solid #d0d3d7;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eeeeee;
+    margin-bottom: 0;
+}
+  
+.navigation li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navigation li a:hover {
+    background-color: white;
+}
+
+.main {
+    position: relative;
+}
+
+.main .leftSide {
+    position: relative;
+}
+
+.leftSide img {
+    margin-top: 20px;
+}
+
+.text {
+    width: 800px;
+}
+
+.text h3 {
+    font-size: 30px;
+    color: #2c82dc;
+}
+
+.text p {
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+  
+.button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+  
+.button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+  
+.button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.main .rightSide {
+    position: relative;
+    margin-top: 20px;
+}
+
+.articles {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.articles img {
+    margin-right: 15px;
+}
+
+.text-art span {
+    font-size: 20px;
+    color: #2c82dc;
+    font-weight: bold;
+}
+
+.text-art p {
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text-art a:link {
+    color: #2c82dc;
+    text-decoration: none;
+}
+  
+.text-art a:visited {
+    text-decoration: none;
+    color: #11959c;
+  }
+  
+.text-art a:hover {
+    color: purple;
+}
+  
+.text-art a:active {
+    text-decoration: underline;
+    color: #11959c;
+}
+
+@media (min-width: 1324px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .main .rightSide {
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 1218px) {
+    .head .last-image {
+        margin-left: 200px;
+    }
+
+    .head h1 {
+        margin-top: 0;
+        margin-left: 20px;
+        font-size: 26px;
+    }
+
+    .articles {
+        width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px 10px 20px;
+    }
+
+    .container .head {
+        display: block;
+    }
+    
+    .head ul {
+        list-style-position: outside;
+    }
+
+    .head h1 {
+        margin-top: 0;
+        font-size: 48px;
+    }
+    
+    .head h5 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .head .last-image {
+        margin-left: 0px;
+    }
+       
+    .navigation {
+        display: none;
+    }
+
+    .leftSide img {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .text {
+        width: 700px;
+    }
+    
+    .articles {
+        width: 700px;
+    }
+    
+    .text-art span {
+        font-size: 22px;
+    }
+    
+    .text-art p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 22px 10px 20px;
+    }
+
+    .container .head {
+        display: block;
+    }
+    
+    .head ul {
+        list-style-position: outside;
+    }
+
+    .head h1 {
+        margin-top: 0;
+        font-size: 35px;
+    }
+    
+    .head h5 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .head .last-image {
+        margin-left: 0px;
+    }
+       
+    .navigation {
+        display: none;
+    }
+
+    .leftSide img {
+        margin-top: 20px;
+        max-width: 400px;
+    }
+    
+    .text {
+        max-width: 390px;
+    }
+    
+    .text h3 {
+        font-size: 24px;
+        color: #2c82dc;
+    }
+    
+    .text p {
+        font-size: 15px;
+    }
+
+    .articles {
+        max-width: 390px;
+    }
+    
+    .text-art span {
+        font-size: 17px;
+    }
+    
+    .text-art p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 992px) {
+    .container {
+        margin: 0 22px 10px 20px;
+    }
+
+    .head img {
+        width: 180px;
+    }
+
+    .head h1 {
+        margin-top: 0;
+        font-size: 30px;
+    }
+    
+    .head h5 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .head .last-image {
+        margin-left: 100px;
+    }
+
+    .leftSide img {
+        margin-top: 20px;
+        max-width: 730px;
+        min-width: 700px;
+    }
+    
+    .text {
+        max-width: 720px;
+    }
+    
+    .text h3 {
+        font-size: 25px;
+        color: #2c82dc;
+    }
+    
+    .text p {
+        font-size: 16px;
+    }
+
+    .articles {
+        max-width: 720px;
+    }
+}
